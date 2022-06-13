@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var fruits = ["Mangue", "Raisin", "Figue", "Kiwi"];
+        //Affiche la liste de fruits disponibles;
+        for (var i in fruits)
+         {
+           document.write(fruits[i] + "<br>");
+         }
+       //Demande au client quel fruit il désire acheter:
+         var demande_client = prompt("Quelle fruit voulez vous acheter");
+         var trouve=0;
+         var t=0;
+         for (var i in fruits)
+         {
+           if(demande_client===fruits[i])
+             {
+               fruits[t]='';
+               alert('ok');
+               trouve=1; 
+             }
+             t++;   
+         }
+         if(trouve==0){
+             document.write("</br>Indisponible</br>");
+         }
+         document.write("</br>Deuxième affichage</br>");
+         var i=0;
+         for (var i in fruits)
+           {
+             document.write(fruits[i] + "<br>");
+           }
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
